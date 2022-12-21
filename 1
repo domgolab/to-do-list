@@ -1,0 +1,23 @@
+tasks = []
+
+def add_task(task):
+    tasks.append(task)
+
+def complete_task(task):
+    tasks.remove(task)
+
+def list_tasks():
+    for task in tasks:
+        print(task)
+
+add_task("Take out the trash")
+add_task("Do the dishes")
+add_task("Vacuum the living room")
+
+print("Pending tasks:")
+list_tasks()
+
+complete_task("Take out the trash")
+
+print("\nPending tasks:")
+list_tasks()
